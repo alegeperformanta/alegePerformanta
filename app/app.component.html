@@ -1,31 +1,24 @@
-<nav id="mainNav" class="navbar navbar-light">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a routerLink="/">Home</a>
-                    </li>
-                    <li>
-                        <a routerLink="/profile">Profile</a>
-                    </li>
-                    <li>
-                        <a href="#" (click)="auth.login()">Login</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<header id="header-full-top" class="hidden-xs <%= header_class %>">
+    <div class="container">
+        <div class="header-full-title">
+            <h1 class="animated fadeInRight"><a href="index.html">Alege <span>Performanta</span></a></h1>
+            <p class="animated fadeInRight">Consulanta si antreprenoriat la cel mai inalt nivel!</p>
         </div>
-        <!-- /.container-fluid -->      
-</nav>
+        <nav class="top-nav">
+            <ul class="top-nav-social hidden-sm">
+                <li><a href="#" class="animated fadeIn animation-delay-6 rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="animated fadeIn animation-delay-7 twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="animated fadeIn animation-delay-8 facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="animated fadeIn animation-delay-9 google-plus"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="animated fadeIn animation-delay-7 linkedin"><i class="fa fa-linkedin"></i></a></li>                                                
+            </ul>
+            <ul>
+                <a href="#" (click)="auth.login()"><i class="fa fa-user"></i> Login</a>
+            </ul>
+        </nav>
+    </div> <!-- container -->
+</header> <!-- header-full -->
+
 
 <div class="container">
       <router-outlet></router-outlet>
